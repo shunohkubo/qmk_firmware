@@ -73,11 +73,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 1: Symbol Layer
  *
     --------------------------------------------------             --------------------------------------------------
-   |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+   |        |      |      |      |      |      |      |           |      |      |      |      |      |      |  BS    |
    |-------- ------ ------ ------ ------ -------------|           |------ ------ ------ ------ ------ ------ --------|
    |        |  1   |  2   |  3   |  4   |  5   |      |           |      |  6   |  7   |  8   |  9   |  0   |        |
    |-------- ------ ------ ------ ------ ------|      |           |      |------ ------ ------ ------ ------ --------|
-   |        |      |      |      |      |      |------|           |------| LEFT | DOWN |  UP  | DOWN |  -   |        |
+   |        |      |      |      |      |      |------|           |------| LEFT | DOWN |  UP  | DOWN |  -   | Enter  |
    |-------- ------ ------ ------ ------ ------|      |           |      |------ ------ ------ ------ ------ --------|
    |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
     -------- ------ ------ ------ ------ -------------             ------------- ------ ------ ------ ------ --------
@@ -106,9 +106,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_TRNS,  KC_TRNS,  KC_TRNS,
 
        // right hand
-       KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,      KC_TRNS,
-       KC_TRNS,  KC_6,     KC_7,           KC_8,           KC_9,          KC_0,         KC_TRNS,
-                 KC_LEFT,  KC_DOWN,        KC_UP,          KC_RGHT,       KC_MINS,      KC_TRNS,
+       KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,      KC_BSPC,
+       KC_TRNS,  KC_6,     KC_7,           KC_8,           KC_9,          KC_0,         KC_EQL,
+                 KC_LEFT,  KC_DOWN,        KC_UP,          KC_RGHT,       KC_MINS,      KC_ENT,
        KC_TRNS,  KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,      KC_TRNS,
                            KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,      KC_TRNS,
 
