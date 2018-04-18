@@ -31,15 +31,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = KC_KEYMAP(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     ESC , 1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,BSPC,
+     F12 , F1 , F2 , F3 , F4 , F5 ,                F6 , F7 , F8 , F9 ,F10 ,F11 ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,GRV ,
+     TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,EQL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LCTL, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      LSFT, Z  , X  , C  , V  , B  ,SPC ,     ENT , N  , M  ,COMM,DOT ,SLSH,MINS,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-       GUI_T(KC_ESC),LT2(_LOWER,KC_P2),SPC,  ENT ,LT2(_RAISE,KC_P1),ALT_T(KC_EQL)
+       GUI_T(KC_ESC),LT2(_LOWER,KC_P2),SPC,  ENT ,LT2(_RAISE,KC_P1),ALT_T(KC_GRV)
   //                  `----+----+----'        `----+----+----'
   ),
 
