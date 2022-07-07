@@ -1,23 +1,6 @@
-FROM debian:jessie
+FROM qmkfm/qmk_cli
 
-RUN apt-get update && apt-get install --no-install-recommends -y build-essential \
-    gcc \
-    unzip \
-    wget \
-    zip \
-    gcc-avr \
-    binutils-avr \
-    avr-libc \
-    dfu-programmer \
-    dfu-util \
-    gcc-arm-none-eabi \
-    binutils-arm-none-eabi \
-    libnewlib-arm-none-eabi \
-    git \
-    software-properties-common \
-    avrdude \
-    && rm -rf /var/lib/apt/lists/*
+VOLUME /qmk_firmware
+WORKDIR /qmk_firmware
 
-VOLUME /qmk
-WORKDIR /qmk
-CMD make clean ; make ${keyboard}:${keymap}
+CMD qmk compile -kb all -km default
