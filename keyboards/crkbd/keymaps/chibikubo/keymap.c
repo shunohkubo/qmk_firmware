@@ -41,6 +41,7 @@ enum macro_keycodes {
 
 #define KC______ KC_TRNS
 #define KC_XXXXX KC_NO
+#define KC_ KC_TRNS
 #define KC_LOWER LOWER
 #define KC_RAISE RAISE
 #define KC_RST   RESET
@@ -77,25 +78,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSLS,\
+           ,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSLS,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
+           ,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10, XXXXX,\
+           ,      ,      ,      ,      ,      ,                       ,      ,      ,      ,      ,      ,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, LANG1, ALTKN \
+                                       ,      ,      ,         , LANG1,      \
                               //`--------------------'  `--------------------'
   ),
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        ESC,  EXLM,    AT,  HASH,  LPRN,  RPRN,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
+           ,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10,      ,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB, XXXXX, XXXXX, XXXXX,  LCBR,  RCBR,                   LEFT,  DOWN,  UP  ,  RGHT,  PIPE,  BSPC,\
+           ,      ,      ,      ,  LCBR,  RCBR,                   LEFT,  DOWN,  UP  ,  RGHT,  PIPE,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT, XXXXX, XXXXX, XXXXX,  LBRC,  RBRC,                   UNDS,  PLUS,  LBRC,  RBRC,  BSLS,  TILD,\
+           ,      ,      ,      ,  LBRC,  RBRC,                       ,      ,      ,      ,      ,      ,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                                       ,      ,      ,         ,      ,       \
                               //`--------------------'  `--------------------'
   ),
 
